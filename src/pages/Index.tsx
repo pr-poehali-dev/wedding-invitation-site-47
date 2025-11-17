@@ -29,20 +29,81 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
         
-        <section className="text-center mb-20 animate-fade-in">
-          <div className="mb-8">
-            <Icon name="Heart" size={48} className="mx-auto text-primary mb-6" />
+        <section className="relative mb-20 animate-fade-in">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mb-12">
+            <div className="col-span-2 md:col-span-2 row-span-2">
+              <img 
+                src="https://cdn.poehali.dev/files/bfc06734-5cff-432a-88e2-8a830d16a801.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/files/46678879-27c5-429d-a4c9-bad4617f4ece.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="col-span-2 md:col-span-1">
+              <img 
+                src="https://cdn.poehali.dev/files/a72fcffe-da39-4eee-8c38-a0f5d5b1c6ea.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="md:hidden">
+              <img 
+                src="https://cdn.poehali.dev/files/46678879-27c5-429d-a4c9-bad4617f4ece.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="md:hidden">
+              <img 
+                src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
+                alt="Анна и Максим" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
-          <h1 className="text-6xl sm:text-7xl font-light text-primary mb-6 tracking-wide">
-            Анна & Максим
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8">
-            Приглашаем вас разделить с нами самый важный день нашей жизни
-          </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="text-center px-4">
+            <div className="mb-8">
+              <Icon name="Heart" size={48} className="mx-auto text-primary mb-6" />
+            </div>
+            <h1 className="text-6xl sm:text-7xl font-light text-primary mb-6 tracking-wide">
+              Анна & Максим
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              Приглашаем вас разделить с нами самый важный день нашей жизни
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 px-4">
             <Card className="animate-scale-in border-primary/20">
               <CardContent className="pt-6 text-center">
                 <Icon name="Calendar" size={32} className="mx-auto text-primary mb-3" />
@@ -71,7 +132,7 @@ const Index = () => {
 
         <Separator className="my-16" />
 
-        <section className="mb-20 animate-fade-in">
+        <section className="mb-20 animate-fade-in px-4">
           <div className="text-center mb-12">
             <Icon name="Shirt" size={40} className="mx-auto text-primary mb-4" />
             <h2 className="text-4xl font-light text-primary mb-6">Дресс-код</h2>
@@ -126,7 +187,7 @@ const Index = () => {
 
         <Separator className="my-16" />
 
-        <section className="animate-fade-in">
+        <section className="animate-fade-in px-4">
           <div className="text-center mb-12">
             <Icon name="Mail" size={40} className="mx-auto text-primary mb-4" />
             <h2 className="text-4xl font-light text-primary mb-4">Подтверждение присутствия</h2>
@@ -218,7 +279,7 @@ const Index = () => {
           </div>
         </section>
 
-        <footer className="mt-20 pt-12 border-t text-center text-muted-foreground">
+        <footer className="mt-20 pt-12 border-t text-center text-muted-foreground px-4">
           <p className="text-sm">
             С любовью, Анна и Максим
           </p>
