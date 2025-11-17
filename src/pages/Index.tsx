@@ -40,51 +40,30 @@ const Index = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="hidden md:block">
+            <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/46678879-27c5-429d-a4c9-bad4617f4ece.jpg" 
                 alt="Анна и Максим" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="hidden md:block">
+            <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
                 alt="Анна и Максим" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="hidden md:block">
+            <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
                 alt="Анна и Максим" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/a72fcffe-da39-4eee-8c38-a0f5d5b1c6ea.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="md:hidden">
-              <img 
-                src="https://cdn.poehali.dev/files/46678879-27c5-429d-a4c9-bad4617f4ece.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="md:hidden">
-              <img 
-                src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="hidden md:block">
-              <img 
-                src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
                 alt="Анна и Максим" 
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -183,6 +162,74 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-6">
+                  <div className="text-center min-w-[80px]">
+                    <div className="text-3xl font-light text-primary">00:00</div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-xl font-semibold mb-2">Завершение банкета</h3>
+                    <p className="text-muted-foreground">Прощание и фотосессия</p>
+                  </div>
+                  <Icon name="Moon" size={32} className="text-primary/60 mt-1" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-6">
+                  <div className="text-center min-w-[80px]">
+                    <div className="text-3xl font-light text-primary">00:15</div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-xl font-semibold mb-2">Трансфер</h3>
+                    <p className="text-muted-foreground">Отправление от места банкета</p>
+                  </div>
+                  <Icon name="Bus" size={32} className="text-primary/60 mt-1" />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <Separator className="my-16" />
+
+        <section className="mb-20 animate-fade-in px-4">
+          <div className="text-center mb-12">
+            <Icon name="MapPin" size={40} className="mx-auto text-primary mb-4" />
+            <h2 className="text-4xl font-light text-primary mb-6">Место проведения</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              8 миля, М-5 Урал, 977-й километр, 1, Тольятти
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-primary/20 overflow-hidden">
+              <CardContent className="p-0">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=49.521878%2C53.488045&z=16&l=map&pt=49.521878,53.488045,pm2rdm"
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  allowFullScreen={true}
+                  className="w-full"
+                  title="Карта места проведения"
+                ></iframe>
+              </CardContent>
+            </Card>
+            <div className="text-center mt-6">
+              <Button
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                onClick={() => window.open('https://yandex.ru/maps/?pt=49.521878,53.488045&z=16&l=map', '_blank')}
+              >
+                <Icon name="ExternalLink" size={18} className="mr-2" />
+                Открыть в Яндекс.Картах
+              </Button>
+            </div>
           </div>
         </section>
 
