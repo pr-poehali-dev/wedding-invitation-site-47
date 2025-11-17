@@ -32,40 +32,26 @@ const Index = () => {
       <div className="max-w-6xl mx-auto">
         
         <section className="relative mb-20 animate-fade-in">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mb-12">
-            <div className="col-span-2 md:col-span-2 row-span-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-12">
+            <div className="col-span-2 md:col-span-2 md:row-span-2">
               <img 
                 src="https://cdn.poehali.dev/files/bfc06734-5cff-432a-88e2-8a830d16a801.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
+                alt="Анна и Игит" 
+                className="w-full h-full object-cover rounded-lg aspect-[4/3] md:aspect-auto"
               />
             </div>
             <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/46678879-27c5-429d-a4c9-bad4617f4ece.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="col-span-1">
-              <img 
-                src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="col-span-1">
-              <img 
-                src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
+                alt="Анна и Игит" 
+                className="w-full h-full object-cover rounded-lg aspect-square"
               />
             </div>
             <div className="col-span-1">
               <img 
                 src="https://cdn.poehali.dev/files/a72fcffe-da39-4eee-8c38-a0f5d5b1c6ea.jpg" 
-                alt="Анна и Максим" 
-                className="w-full h-full object-cover rounded-lg"
+                alt="Анна и Игит" 
+                className="w-full h-full object-cover rounded-lg aspect-square"
               />
             </div>
           </div>
@@ -75,7 +61,7 @@ const Index = () => {
               <Icon name="Heart" size={48} className="mx-auto text-primary mb-6" />
             </div>
             <h1 className="text-6xl sm:text-7xl font-light text-primary mb-6 tracking-wide">
-              Анна & Максим
+              Анна & Игит
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Приглашаем вас разделить с нами самый важный день нашей жизни
@@ -86,15 +72,15 @@ const Index = () => {
             <Card className="animate-scale-in border-primary/20">
               <CardContent className="pt-6 text-center">
                 <Icon name="Calendar" size={32} className="mx-auto text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-2">15 июня 2025</h3>
-                <p className="text-muted-foreground">Воскресенье</p>
+                <h3 className="text-2xl font-semibold mb-2">21 августа 2026</h3>
+                <p className="text-muted-foreground">Пятница</p>
               </CardContent>
             </Card>
             
             <Card className="animate-scale-in [animation-delay:100ms] border-primary/20">
               <CardContent className="pt-6 text-center">
                 <Icon name="Clock" size={32} className="mx-auto text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-2">15:00</h3>
+                <h3 className="text-2xl font-semibold mb-2">17:00</h3>
                 <p className="text-muted-foreground">Начало церемонии</p>
               </CardContent>
             </Card>
@@ -102,8 +88,8 @@ const Index = () => {
             <Card className="animate-scale-in [animation-delay:200ms] border-primary/20">
               <CardContent className="pt-6 text-center">
                 <Icon name="MapPin" size={32} className="mx-auto text-primary mb-3" />
-                <h3 className="text-2xl font-semibold mb-2">Усадьба</h3>
-                <p className="text-muted-foreground">Загородный клуб "Гармония"</p>
+                <h3 className="text-2xl font-semibold mb-2">Восьмая миля</h3>
+                <p className="text-muted-foreground">Загородный комплекс</p>
               </CardContent>
             </Card>
           </div>
@@ -286,6 +272,23 @@ const Index = () => {
           <p className="text-center text-muted-foreground mt-6 italic">
             Просьба избегать ярких неоновых оттенков
           </p>
+
+          <div className="grid grid-cols-2 gap-2 mt-12 max-w-3xl mx-auto">
+            <div className="col-span-1">
+              <img 
+                src="https://cdn.poehali.dev/files/71d6e671-a1d4-47c9-9681-11f10abf598d.jpg" 
+                alt="Анна и Игит" 
+                className="w-full h-full object-cover rounded-lg aspect-[3/4]"
+              />
+            </div>
+            <div className="col-span-1">
+              <img 
+                src="https://cdn.poehali.dev/files/3165ec6e-e0ee-464e-be53-2c09bde59c39.jpg" 
+                alt="Анна и Игит" 
+                className="w-full h-full object-cover rounded-lg aspect-[3/4]"
+              />
+            </div>
+          </div>
         </section>
 
         <Separator className="my-16" />
