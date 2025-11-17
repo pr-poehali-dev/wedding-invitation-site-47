@@ -134,6 +134,62 @@ const Index = () => {
 
         <section className="mb-20 animate-fade-in px-4">
           <div className="text-center mb-12">
+            <Icon name="CalendarClock" size={40} className="mx-auto text-primary mb-4" />
+            <h2 className="text-4xl font-light text-primary mb-6">Программа дня</h2>
+          </div>
+
+          <div className="max-w-2xl mx-auto space-y-6">
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-6">
+                  <div className="text-center min-w-[80px]">
+                    <div className="text-3xl font-light text-primary">16:30</div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-xl font-semibold mb-2">Сбор гостей</h3>
+                    <p className="text-muted-foreground">Приветственный фуршет и знакомство</p>
+                  </div>
+                  <Icon name="Glasses" size={32} className="text-primary/60 mt-1" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-6">
+                  <div className="text-center min-w-[80px]">
+                    <div className="text-3xl font-light text-primary">17:00</div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-xl font-semibold mb-2">Церемония</h3>
+                    <p className="text-muted-foreground">Официальная часть и обмен клятвами</p>
+                  </div>
+                  <Icon name="Heart" size={32} className="text-primary/60 mt-1" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-6">
+                  <div className="text-center min-w-[80px]">
+                    <div className="text-3xl font-light text-primary">18:00</div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-xl font-semibold mb-2">Банкет</h3>
+                    <p className="text-muted-foreground">Праздничный ужин, танцы и веселье</p>
+                  </div>
+                  <Icon name="UtensilsCrossed" size={32} className="text-primary/60 mt-1" />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <Separator className="my-16" />
+
+        <section className="mb-20 animate-fade-in px-4">
+          <div className="text-center mb-12">
             <Icon name="Shirt" size={40} className="mx-auto text-primary mb-4" />
             <h2 className="text-4xl font-light text-primary mb-6">Дресс-код</h2>
           </div>
